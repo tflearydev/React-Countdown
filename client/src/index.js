@@ -1,7 +1,5 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import React, {Component} from 'react';
 // import * as serviceWorker from './serviceWorker';
 
@@ -12,3 +10,36 @@ import React, {Component} from 'react';
 // // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
 
+class StopwatchTime extends Component {
+    render() {
+      return (
+        <div style={{marginLeft:500}}>
+          <h3>How much time?</h3>
+          <input type="number" value={this.props.value} onChange={this.props.handleChange} required />
+        </div>
+      );
+    }
+  }
+   
+  class Stopwatch extends Component {
+    render() {
+      return (
+        <div>
+          <h1 style={{ fontSize: 125, marginLeft:470 }}>{this.props.value}:{this.props.seconds}</h1>
+        </div>
+      );
+    }
+  }
+   
+  class Start extends Component {
+    render() {
+      return (
+        <div style={{ marginLeft: 540 }}>
+          <button className="btn btn-lg btn-success" disabled={!this.props.value} onClick={this.props.startCountDown}>Start</button>
+        </div>
+   
+      );
+    }
+  }
+   
+  

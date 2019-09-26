@@ -8,11 +8,15 @@ Created a few quick class components in react to bring together a simple timer/s
 ## Technologies Used:
 ____
 * Visual Studio
-* Javascript, React.js, JSX syntax - Frontend
+* Javascript, React.js 
 
 
-## Screenshot :
+## Screenshots :
 ____
 
 <img src='screenshot.png' alt='home' height=450 width=450/>
+<img src='screenshot2.png' alt='home' height=450 width=450/>
+<img src='screenshot3.png' alt='home' height=450 width=450/>
+
+
 
